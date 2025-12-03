@@ -220,6 +220,22 @@ dropdownToggle.addEventListener('click', function(e) {
 document.addEventListener('click', function() {
     dropdownMenu.classList.remove('show');
 });
+
+// Hamburger menu toggle
+const menuBtn = document.querySelector('#menu-btn');
+const navbar = document.querySelector('.navbar');
+
+menuBtn.addEventListener('click', function (e) {
+    e.stopPropagation();
+    navbar.classList.toggle('active');
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', function () {
+    navbar.classList.remove('active');
+});
+
+
 </script>
 
          <?php endif; ?>

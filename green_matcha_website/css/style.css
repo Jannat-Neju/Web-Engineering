@@ -1163,6 +1163,49 @@ section{
        transform: translateX(-50%);
    }
 }
+/* --- Responsive Navbar --- */
+@media (max-width: 768px) {
+    .navbar {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: #fff;
+        width: 250px;
+        border-left: 2px solid #008000;
+        padding: 10px 0;
+        display: none;
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar ul li {
+        width: 100%;
+    }
+
+    .navbar ul li a {
+        padding: 12px 20px;
+        display: block;
+        width: 100%;
+        color: #333;
+    }
+
+    #menu-btn {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        color: #008000;
+    }
+}
+
+/* Show menu when active */
+.navbar.active {
+    display: flex;
+}
+
 
 
 
