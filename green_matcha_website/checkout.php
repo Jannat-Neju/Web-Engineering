@@ -239,13 +239,14 @@ if (isset($_POST['order'])) {
 
         <input type="submit" name="order" value="Order Now" class="btn">
 
-        <?php
-        if (!empty($message)) {
-            foreach ($message as $msg) {
-                echo '<div class="message">'.$msg.'</div>';
-            }
-        }
-        ?>
+       <?php
+if (!empty($message) && is_array($message)) {
+    foreach ($message as $msg) {
+        echo '<div class="message">'.$msg.'</div>';
+    }
+}
+?>
+
     </form>
 </section>
 

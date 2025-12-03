@@ -65,7 +65,7 @@ try {
     $mail->Port = 587;
 
     // Recipients
-    $mail->setFrom('your_email@gmail.com', 'Flower Shop');
+    $mail->setFrom('your_email@gmail.com', 'BotaniQ Shop');
     $mail->addAddress($order['email'], $order['name']);
 
     // Attach PDF
